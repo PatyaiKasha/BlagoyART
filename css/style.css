@@ -1,0 +1,28 @@
+@import url(gride-css.css);
+body {
+  margin: 0;
+  padding: 0;
+}
+body li {
+  list-style-type: none;
+}
+
+header .logo img {
+  width: 100%;
+}
+header .search input {
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+  font-size: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

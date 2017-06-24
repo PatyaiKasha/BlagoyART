@@ -1,0 +1,39 @@
+@import url(gride-css.css);
+body {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+header {
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+    .search {
+        input {
+            width: 100%;
+        }
+    }
+    .contacts {
+        // li {
+        //     list-style-type: none;
+        // }
+    }
+}
+
+nav {
+    ul {
+        padding: 0;
+        font-size: 0;
+        li {
+            display: inline-block;
+            padding: 12px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+}
