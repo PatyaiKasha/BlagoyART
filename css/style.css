@@ -1,28 +1,76 @@
-@import url(gride-css.css);
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 body {
-  margin: 0;
+  margin: 60px 44px;
   padding: 0;
+  font-family: sans-serif;
+}
+body ul {
+  margin-bottom: 0;
 }
 body li {
   list-style-type: none;
 }
-
-header .logo img {
-  width: 100%;
-}
-header .search input {
-  width: 100%;
+body a:hover {
+  text-decoration: none;
 }
 
+header {
+  padding: 0 56px;
+}
+header img {
+  width: 100%;
+}
+header input {
+  width: 100%;
+}
+header ul {
+  padding: 0;
+}
+
+nav {
+  padding: 0 48px;
+}
 nav ul {
   padding: 0;
   font-size: 0;
 }
 nav ul li {
+  font-size: 12px;
   display: inline-block;
-  padding: 12px;
-  font-size: 16px;
   text-transform: uppercase;
+}
+nav .main-menu {
+  font-weight: bold;
+}
+nav .main-menu li {
+  font-size: 14px;
+  padding: 24px 8px;
+}
+nav .cart-menu {
+  line-height: 68px;
+}
+nav .cart-menu .fa-shopping-cart {
+  font-size: 24px;
+  color: #cd944c;
+}
+nav .cart-menu .g-count {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 7px;
+  border-radius: 50%;
+  background: #cd944c;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+nav::before,
+nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid #dddfdf;
 }
 
 /*# sourceMappingURL=style.css.map */

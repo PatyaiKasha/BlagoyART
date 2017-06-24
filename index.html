@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>BlagoyART</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
-                    <div class="col-2 logo">
-                        <img src="img/logo.png" alt="logo">
-                        <p>Интернет-магазин &#171;Благой арт&#187;</p>
-                    </div>
-                    <div class="col-4 search">
-                        <input type="text">
-                    </div>
+                <div class="col-sm-3 logo">
+                    <img src="img/logo.png" alt="logo.png">
+                    <p>Интернет-магазин &#171;Благой арт&#187;</p>
                 </div>
-                <div class="col-2 contacts">
-                    <div class="col-3 phone">
+                <div class="col-sm-5 search">
+                    <input type="text">
+                </div>
+                <div class="col-sm-4 contacts text-right">
+                    <div class="phone col-sm-6">
                         <a href="tel:+380952874390">+38(095)287-43-90</a>
                     </div>
-                    <div class="col-3 work-time">
+                    <div class="work-time col-sm-6">
                         <ul>
                             <li>ПН-ПТ с 9:00 до 18:00</li>
                             <li>Доставка по РФ и СНГ</li>
@@ -34,19 +35,28 @@
             </div>
         </div>
     </header>
-    <nav class="container">
-        <div class="row">
-            <div class="col-4">
-                <ul>
-                    <li>Каталог товаров</li>
-                    <li>Условия работы</li>
-                    <li>Скидки</li>
-                    <li>Оплата и доставка</li>
-                    <li>Документы</li>
-                    <li>Контакты</li>
-                </ul>
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 main-menu">
+                    <ul>
+                        <li><a href="#">Каталог товаров</a></li>
+                        <li><a href="#">Условия работы</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 cart-menu text-right">
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <span class="g-count">999</span>
+                    <span class="goods">Товаров /</span>
+                    <span id="price" class="price">56 789</span>
+                    <span>P</span>
+                    <span class="btn-enter">Войти</span>
+                </div>
             </div>
-            <div class="col-2"></div>
         </div>
     </nav>
 </body>

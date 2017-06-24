@@ -1,39 +1,75 @@
-@import url(gride-css.css);
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+$gold: #cd944c;
 body {
-    margin: 0;
+    margin: 60px 44px;
     padding: 0;
+    font-family: sans-serif;
+    ul {
+        margin-bottom: 0;
+    }
     li {
         list-style-type: none;
+    }
+    a:hover {
+        text-decoration: none;
     }
 }
 
 header {
-    .logo {
-        img {
-            width: 100%;
-        }
+    padding: 0 56px;
+    img {
+        width: 100%;
     }
-    .search {
-        input {
-            width: 100%;
-        }
+    input {
+        width: 100%;
     }
-    .contacts {
-        // li {
-        //     list-style-type: none;
-        // }
+    ul {
+        padding: 0;
     }
 }
 
 nav {
+    padding: 0 48px;
     ul {
         padding: 0;
         font-size: 0;
         li {
+            font-size: 12px;
             display: inline-block;
-            padding: 12px;
-            font-size: 16px;
             text-transform: uppercase;
         }
     }
+    .main-menu {
+        font-weight: bold;
+        li {
+            font-size: 14px;
+            padding: 24px 8px;
+        }
+    }
+    .cart-menu {
+        line-height: 68px;
+        .fa-shopping-cart {
+            font-size: 24px;
+            color: $gold;
+        }
+        .g-count {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            padding: 0 7px;
+            border-radius: 50%;
+            background: $gold;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+    }
+}
+
+nav::before,
+nav::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #dddfdf;
 }
