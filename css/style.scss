@@ -1,5 +1,6 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 $gold: #cd944c;
+$white: #ffffff;
 body {
     margin: 60px 44px;
     padding: 0;
@@ -82,7 +83,7 @@ nav {
         }
         .g-count {
             display: inline-block;
-            color: #fff;
+            color: $white;
             background: $gold;
             height: 32px;
             width: 32px;
@@ -125,7 +126,7 @@ section#slider {
             line-height: 130px;
             width: 40px;
             font-size: 40px;
-            color: #fff;
+            color: $white;
             font-weight: bold;
             // position: absolute;
             // left: 10px;
@@ -134,7 +135,7 @@ section#slider {
     .btn-prev,
     .btn-next {
         &:hover {
-            background-color: #fff;
+            background-color: $white;
             opacity: 0.88;
         }
     }
@@ -158,8 +159,27 @@ section#slider {
         width: 500px;
         padding: 32px;
         background-color: #d2a66b;
-        color: #fff;
+        color: $white;
         margin: 0 0 0 32px;
         opacity: 0.88;
+    }
+}
+
+.dots {
+    .dot {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: #eedcc4;
+        margin: 47px 11px 32px 11px;
+    }
+    .active {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: #cb944c;
+        margin: 47px 11px 32px 11px;
     }
 }

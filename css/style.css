@@ -74,7 +74,7 @@ nav .cart-menu .fa-user {
 }
 nav .cart-menu .g-count {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   background: #cd944c;
   height: 32px;
   width: 32px;
@@ -118,12 +118,12 @@ section#slider .btn-next .fa-angle-right {
   line-height: 130px;
   width: 40px;
   font-size: 40px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
 }
 section#slider .btn-prev:hover,
 section#slider .btn-next:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 0.88;
 }
 section#slider .fa-angle-left:hover,
@@ -144,9 +144,26 @@ section#slider h2.about {
   width: 500px;
   padding: 32px;
   background-color: #d2a66b;
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 0 32px;
   opacity: 0.88;
+}
+
+.dots .dot {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #eedcc4;
+  margin: 47px 11px 32px 11px;
+}
+.dots .active {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #cb944c;
+  margin: 47px 11px 32px 11px;
 }
 
 /*# sourceMappingURL=style.css.map */
