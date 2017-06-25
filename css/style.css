@@ -17,13 +17,27 @@ body a:hover {
 header {
   padding: 0 56px;
 }
-header img {
+header .logo img {
   width: 100%;
 }
-header input {
+header .search input {
   width: 100%;
+  height: 40px;
+  border: 1px solid #dddfdf;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
-header ul {
+header .search::after {
+  content: "\1F50D";
+  display: inline-block;
+  font-size: 24px;
+  color: #cd944c;
+  position: absolute;
+  right: 24px;
+  top: 0;
+  line-height: 40px;
+}
+header .contents ul {
   padding: 0;
 }
 
@@ -41,28 +55,36 @@ nav ul li {
 }
 nav .main-menu {
   font-weight: bold;
+  padding: 0;
 }
-nav .main-menu li {
+nav .main-menu ul li {
   font-size: 14px;
   padding: 24px 8px;
 }
 nav .cart-menu {
   line-height: 68px;
+  font-weight: bold;
+  font-size: 16px;
 }
-nav .cart-menu .fa-shopping-cart {
+nav .cart-menu .fa-shopping-cart,
+nav .cart-menu .fa-user {
   font-size: 24px;
   color: #cd944c;
+  vertical-align: middle;
 }
 nav .cart-menu .g-count {
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
   color: #fff;
-  padding: 0 7px;
-  border-radius: 50%;
   background: #cd944c;
-  vertical-align: middle;
-  box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  padding: 0 5px;
+  margin: 0 4px;
+}
+nav .cart-menu .fa-user {
+  margin: 0 2px 0 24px;
 }
 
 nav::before,
@@ -71,6 +93,60 @@ nav::after {
   display: block;
   width: 100%;
   border: 1px solid #dddfdf;
+}
+
+section#slider {
+  height: 326px;
+  background-image: url(../img/slid-img-1.jpg);
+  margin-top: 32px;
+  padding: 99px 0;
+}
+section#slider .btn-prev,
+section#slider .btn-next {
+  display: inline-block;
+  padding: 0;
+  height: 130px;
+  width: 40px;
+  background-color: #d2a66b;
+  opacity: 0.88;
+  cursor: pointer;
+}
+section#slider .btn-prev .fa-angle-left,
+section#slider .btn-prev .fa-angle-right,
+section#slider .btn-next .fa-angle-left,
+section#slider .btn-next .fa-angle-right {
+  line-height: 130px;
+  width: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+section#slider .btn-prev:hover,
+section#slider .btn-next:hover {
+  background-color: #fff;
+  opacity: 0.88;
+}
+section#slider .fa-angle-left:hover,
+section#slider .fa-angle-right:hover {
+  color: #d2a66b;
+  opacity: 0.88;
+}
+section#slider .btn-prev {
+  float: left;
+  padding-left: 11px;
+}
+section#slider .btn-next {
+  float: right;
+  padding-left: 14px;
+}
+section#slider h2.about {
+  display: inline-block;
+  width: 500px;
+  padding: 32px;
+  background-color: #d2a66b;
+  color: #fff;
+  margin: 0 0 0 32px;
+  opacity: 0.88;
 }
 
 /*# sourceMappingURL=style.css.map */
