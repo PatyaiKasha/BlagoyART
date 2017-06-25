@@ -1,55 +1,91 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 $gold: #cd944c;
 $white: #ffffff;
+$act-dot:#cb944c;
+$def-dot:#eedcc4;
+$slider-color:#d2a66b;
 body {
     margin: 60px 44px;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     ul {
         margin-bottom: 0;
     }
     li {
         list-style-type: none;
     }
-    a:hover {
+    a:hover,
+    a:focus,
+    a:active {
         text-decoration: none;
     }
 }
 
+// *******HEADER + SEARCH + CONTACTS******* //
 header {
     padding: 0 56px;
     .logo {
         img {
             width: 100%;
         }
+        p {
+            color: #747688;
+            font-size: 14px;
+            margin-top: 10px;
+        }
     }
     .search {
-        // margin: 0 auto;
         input {
             width: 100%;
             height: 40px;
             border: 1px solid #dddfdf;
-            border-radius: 3px;
+            border-radius: 5px;
             box-sizing: border-box;
+            padding: 4px;
         }
     }
     .search::after {
         content: "\1F50D";
         display: inline-block;
         font-size: 24px;
-        color: #cd944c;
+        color: $gold;
         position: absolute;
         right: 24px;
         top: 0;
         line-height: 40px;
     }
-    .contents {
+    .contacts {
+        padding: 0;
+        .phone {
+            line-height: 40px;
+            a {
+                font-size: 21px;
+                color: #181616;
+                margin-right: -15px;
+                &:hover {
+                    color: $gold;
+                }
+            }
+        }
         ul {
             padding: 0;
+            .work-time {
+                color: $gold;
+            }
+            .deliver {
+                color: #181616;
+            }
+            li {
+                font-size: 14px;
+                .deliver {
+                    color: #181616;
+                }
+            }
         }
     }
 }
 
+// *******NAVIGATION-MENU******* //
 nav {
     padding: 0 48px;
     ul {
@@ -59,15 +95,30 @@ nav {
             font-size: 12px;
             display: inline-block;
             text-transform: uppercase;
+            a {
+                display: inline-block;
+                padding: 24px 8px;
+                color: #181616;
+                transition: color 0.2s 0.02s ease;
+                &:hover {
+                    background-color: $gold;
+                    color: $white;
+                }
+            }
         }
     }
     .main-menu {
         font-weight: bold;
         padding: 0;
+        .fa-list,
+        .fa-angle-down {
+            color: $gold;
+            padding: 0 12px;
+            font-size: 16px;
+        }
         ul {
             li {
                 font-size: 14px;
-                padding: 24px 8px;
             }
         }
     }
@@ -96,7 +147,12 @@ nav {
             margin: 0 2px 0 24px;
         }
     }
-    .btn-enter {}
+    .btn-enter {
+        color: #181616;
+        &:hover {
+            color: $gold;
+        }
+    }
 }
 
 nav::before,
@@ -107,6 +163,7 @@ nav::after {
     border: 1px solid #dddfdf;
 }
 
+// *******SLIDER******* //
 section#slider {
     height: 326px;
     background-image: url(../img/slid-img-1.jpg);
@@ -118,7 +175,7 @@ section#slider {
         padding: 0;
         height: 130px;
         width: 40px;
-        background-color: #d2a66b;
+        background-color: $slider-color;
         opacity: 0.88;
         cursor: pointer;
         .fa-angle-left,
@@ -128,8 +185,6 @@ section#slider {
             font-size: 40px;
             color: $white;
             font-weight: bold;
-            // position: absolute;
-            // left: 10px;
         }
     }
     .btn-prev,
@@ -142,7 +197,7 @@ section#slider {
     .fa-angle-left,
     .fa-angle-right {
         &:hover {
-            color: #d2a66b;
+            color: $slider-color;
             opacity: 0.88;
         }
     }
@@ -158,28 +213,33 @@ section#slider {
         display: inline-block;
         width: 500px;
         padding: 32px;
-        background-color: #d2a66b;
+        background-color: $slider-color;
         color: $white;
         margin: 0 0 0 32px;
         opacity: 0.88;
     }
 }
 
+// *******SLIDER-DOTS******* //
 .dots {
     .dot {
         display: inline-block;
         height: 18px;
         width: 18px;
         border-radius: 50%;
-        background-color: #eedcc4;
+        background-color: $def-dot;
         margin: 47px 11px 32px 11px;
+        &:hover {
+            background-color: $act-dot;
+            cursor: pointer;
+        }
     }
     .active {
         display: inline-block;
         height: 18px;
         width: 18px;
         border-radius: 50%;
-        background-color: #cb944c;
+        background-color: $act-dot;
         margin: 47px 11px 32px 11px;
     }
 }

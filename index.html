@@ -7,6 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,20 +16,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 logo">
-                    <img src="img/logo.png" alt="logo.png">
+                    <a href="#"><img src="img/logo.png" alt="logo.png"></a>
                     <p>Интернет-магазин &#171;Благой арт&#187;</p>
                 </div>
                 <div class="col-sm-5 search">
-                    <input type="text" placeholder=" Введите название или артикул">
+                    <input type="text" placeholder="Введите название или артикул">
                 </div>
                 <div class="col-sm-4 contacts text-right">
                     <div class="phone col-sm-6">
                         <a href="tel:+380952874390">+38(095)287-43-90</a>
                     </div>
-                    <div class="work-time col-sm-6">
+                    <div class="col-sm-6">
                         <ul>
-                            <li>ПН-ПТ с 9:00 до 18:00</li>
-                            <li>Доставка по РФ и СНГ</li>
+                            <li class="work-time">ПН-ПТ с 9:00 до 18:00</li>
+                            <li class="deliver">Доставка по РФ и СНГ</li>
                         </ul>
                     </div>
                 </div>
@@ -40,7 +41,12 @@
             <div class="row">
                 <div class="col-sm-8 main-menu">
                     <ul>
-                        <li><a href="#">Каталог товаров</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-list" aria-hidden="true"></i>Каталог товаров
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
                         <li><a href="#">Условия работы</a></li>
                         <li><a href="#">Скидки</a></li>
                         <li><a href="#">Оплата и доставка</a></li>
@@ -55,7 +61,7 @@
                     <span id="price" class="price">56 789</span>
                     <i class="fa fa-rub" aria-hidden="true"></i>
                     <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-                    <span class="btn-enter">Войти</span>
+                    <a href="#"><span class="btn-enter">Войти</span></a>
                 </div>
             </div>
         </div>
